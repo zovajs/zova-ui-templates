@@ -47,7 +47,7 @@
     "quasar": "^2.19.3",
     "vue": "^3.5.34",
     "vue-router": "npm:@cabloy/vue-router@^4.4.16",
-    "zova": "^5.1.71"
+    "zova": "^5.1.73"
   },
   "devDependencies": {
     "@cabloy/lint": "^5.1.15",
@@ -57,13 +57,13 @@
     "autoprefixer": "^10.5.0",
     "concurrently": "^8.2.2",
     "oxfmt": "^0.45.0",
-    "oxlint": "^1.64.0",
-    "quasar-app-extension-zova": "^1.2.27",
+    "oxlint": "^1.65.0",
+    "quasar-app-extension-zova": "^1.2.29",
     "typescript": "^5.9.3",
     "vite": "^7.3.3",
     "vite-plugin-fake-server-turbo": "^3.0.18",
-    "vue-tsc": "^3.2.8",
-    "zova-vite": "^1.1.26"
+    "vue-tsc": "^3.3.0",
+    "zova-vite": "^1.1.28"
   },
   "license": "MIT",
   "gitHead": "1c1c99cd879a2f00f32fb4b369a16ae90b9405da",
