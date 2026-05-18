@@ -47,10 +47,5 @@
   "engines": {
     "node": ">=22.12.0"
   },
-  "packageManager": "pnpm@10.19.0",
-  "pnpm": {
-    "overrides": {
-      "zod": "npm:@cabloy/zod@4.3.6"
-    }
-  }
+  "packageManager": "pnpm@10.19.0"
 }
