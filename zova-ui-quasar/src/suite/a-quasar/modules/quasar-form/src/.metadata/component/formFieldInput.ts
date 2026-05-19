@@ -6,7 +6,7 @@ import { prepareComponentOptions, useController } from 'zova';
 import type { ControllerFormFieldInputProps } from '../../component/formFieldInput/controller.jsx';
 
 import { ControllerFormFieldInput } from '../../component/formFieldInput/controller.jsx';
-export type TypeControllerFormFieldInputPublicProps = {
+export type ZFormFieldInputProps = {
   controllerRef?: (ref: ControllerFormFieldInput) => void;
 } & ControllerFormFieldInputProps;
 
@@ -20,13 +20,10 @@ declare module 'zova-module-quasar-form' {
   }
 }
 
-export const ZFormFieldInput = defineComponent(
-  (_props: TypeControllerFormFieldInputPublicProps) => {
-    useController(ControllerFormFieldInput, undefined, undefined);
-    return () => {};
-  },
-  prepareComponentOptions(ControllerFormFieldInput.$componentOptions),
-);
+export const ZFormFieldInput = defineComponent((_props: ZFormFieldInputProps) => {
+  useController(ControllerFormFieldInput, undefined, undefined);
+  return () => {};
+}, prepareComponentOptions(ControllerFormFieldInput.$componentOptions));
 declare module 'zova-module-a-bean' {
   export interface IVonaComponentRecord {
     'quasar-form:formFieldInput': ControllerFormFieldInputProps;
