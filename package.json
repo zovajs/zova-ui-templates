@@ -20,8 +20,9 @@
   "type": "module",
   "scripts": {
     "init": "pnpm install --no-frozen-lockfile && pnpm --dir './zova-ui-empty' run init && pnpm --dir './zova-ui-quasar' run init && pnpm --dir './zova-ui-vuetify' run init",
-    "release-patch": "./scripts/release.sh patch",
-    "release-minor": "./scripts/release.sh minor"
+    "update": "./scripts/update.sh",
+    "release-patch": "npm run update && ./scripts/release.sh patch",
+    "release-minor": "npm run update && ./scripts/release.sh minor"
   },
   "dependencies": {},
   "devDependencies": {
