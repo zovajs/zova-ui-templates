@@ -4,5 +4,5 @@ git add .
 git commit -m 'chore: update'
 git push
 
-lerna version $1
-lerna publish from-git
+lerna version $1 --yes
+lerna publish from-git --yes
