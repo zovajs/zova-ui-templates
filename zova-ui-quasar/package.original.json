@@ -1,6 +1,6 @@
 {
   "name": "zova-ui-quasar",
-  "version": "5.1.99",
+  "version": "5.1.100",
   "description": "A vue3 quasar framework with ioc",
   "publishConfig": {
     "access": "public"
@@ -22,6 +22,7 @@
     "format:fix": "oxfmt --write",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
+    "update": "pnpm update && zova :tools:deps",
     "dev:ssr:admin": "npm run prerun && quasar dev --mode ssr --flavor admin",
     "build:ssr:admin": "npm run prerun && quasar build --mode ssr --flavor admin",
     "preview:ssr:admin": "concurrently \"node ./dist-mock/index.js\" \"node ./dist/ssr-admin/index.js\"",

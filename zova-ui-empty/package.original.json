@@ -1,6 +1,6 @@
 {
   "name": "zova-ui-empty",
-  "version": "5.1.98",
+  "version": "5.1.99",
   "packageManager": "pnpm@10.19.0",
   "description": "A vue3 empty framework with ioc",
   "publishConfig": {
@@ -22,6 +22,7 @@
     "format:fix": "oxfmt --write",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
+    "update": "pnpm update && zova :tools:deps",
     "dev:ssr:admin": "npm run prerun && quasar dev --mode ssr --flavor admin",
     "build:ssr:admin": "npm run prerun && quasar build --mode ssr --flavor admin",
     "preview:ssr:admin": "concurrently \"node ./dist-mock/index.js\" \"node ./dist/ssr-admin/index.js\"",
@@ -57,7 +58,7 @@
     "oxfmt": "^0.45.0",
     "oxlint": "^1.66.0",
     "quasar-app-extension-zova": "^1.2.30",
-    "sass": "^1.99.0",
+    "sass": "^1.100.0",
     "typescript": "^5.9.3",
     "vite": "^7.3.3",
     "vite-plugin-fake-server-turbo": "^3.0.18",
